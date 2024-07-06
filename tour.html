@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vincordSchools</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="school-info">
+                <h1>VincordSchools</h1>
+                <p>123 Main Street, Hometown, Country</p>
+            </div>
+            <div class="social-handles">
+                <a href="https://facebook.com/school" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/school" target="_blank">
+                    <img src="twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com/school" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#management">Management</a></li>
+            <li><a href="#news-blogs">News & Blogs</a></li>
+            <li><a href="#school-activities">School Activities</a></li>
+            <li><a href="tour.html">School Tour</a></li>
+            <li><a href="application.html">Application</a></li>
+        </ul>
+    </nav>
+<link rel="stylesheet" href="tour.css">
+            
+    </nav>
+
+    <main>
+        <section id="school-tour">
+            <h2>School Tour</h2>
+            <div class="tour-content">
+                <div class="tour-section">
+                    <h3>Facilities</h3>
+                    <img src="facilities.jpg" alt="School Facilities">
+                    <p>Our school is equipped with state-of-the-art facilities including modern classrooms, science laboratories, sports fields, and a fully stocked library.</p>
+                </div>
+                <div class="tour-section">
+                    <h3>Teachers</h3>
+                    <img src="teachers.jpg" alt="Teachers">
+                    <p>Meet our dedicated team of teachers who are passionate about education and committed to helping each student achieve their full potential.</p>
+                </div>
+                <div class="tour-section">
+                    <h3>Past Students</h3>
+                    <img src="past-students.jpg" alt="Past Students">
+                    <p>Our alumni have gone on to achieve great success in various fields. We are proud of our past students and their contributions to society.</p>
+                </div>
+                <div class="tour-section">
+                    <h3>Present Students</h3>
+                    <img src="present-students.jpg" alt="Present Students">
+                    <p>Our current students are engaged in a wide range of academic and extracurricular activities, fostering a vibrant and dynamic school community.</p>
+                </div>
+                <div class="tour-section">
+                    <h3>Projects Done</h3>
+                    <img src="projects.jpg" alt="Projects">
+                    <p>Students have completed various projects, from scientific research to community service initiatives, showcasing their skills and creativity.</p>
+                </div>
+                <div class="tour-section">
+                    <h3>Clubs</h3>
+                    <img src="clubs.jpg" alt="Clubs">
+                    <p>Our school offers a variety of clubs including Drama Club, Science Club, Art Club, and Sports Club, providing students with opportunities to explore their interests and talents.</p>
+                </div>
+            </div>
+        </section>
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            const mainContent = document.getElementById('mainContent');
+            sideMenu.classList.toggle('show');
+            mainContent.classList.toggle('slide');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuLinks = document.querySelectorAll('.side-menu a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    toggleMenu();
+                });
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Secondary School. All rights reserved.</p>
+    </footer>
+</body>
+</html>

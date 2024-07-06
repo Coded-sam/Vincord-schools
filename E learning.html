@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning - Vincordschools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="school-info">
+                <h1>Vincordschools</h1>
+                <p>123 Main Street, Hometown, Country</p>
+            </div>
+            <div class="social-handles">
+                <a href="https://facebook.com/school" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/school" target="_blank">
+                    <img src="twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com/school" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="side-menu">
+        <ul>
+            <li><a href="index.html#welcome">Welcome</a></li>
+            <li><a href="index.html#management">Management</a></li>
+            <li><a href="index.html#news-blogs">News & Blogs</a></li>
+            <li><a href="index.html#school-activities">School Activities</a></li>
+            <li><a href="index.html#school-info">School Info</a></li>
+            <li><a href="tour.html">School Tour</a></li>
+            <li><a href="application.html">Application</a></li>
+            <li><a href="student-login.html">Student Login</a></li>
+            <li><a href="e-learning.html">E-Learning</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="e-learning">
+            <h2>E-Learning</h2>
+            <div class="e-learning-content">
+                <p>Welcome to the Vincordschools E-Learning platform. Here, you can access a variety of online courses, resources, and interactive sessions to enhance your learning experience.</p>
+                <ul>
+                    <li><a href="course1.html">Mathematics</a></li>
+                    <li><a href="course2.html">Science</a></li>
+                    <li><a href="course3.html">History</a></li>
+                    <li><a href="course4.html">Literature</a></li>
+                </ul>
+                <p>Log in to access personalized learning materials and track your progress:</p>
+                <a href="student-login.html" class="login-button">Student Login</a>
+            </div>
+
+            <div class="video-section">
+                <h3>YouTube Videos</h3>
+                <iframe src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="pdf-section">
+                <h3>PDF Resources</h3>
+                <iframe src="path/to/pdfresource.pdf" frameborder="0"></iframe>
+            </div>
+
+            <div class="video-album-section">
+                <h3>Video Albums by Grade</h3>
+                <div class="video-album">
+                    <div class="video">
+                        <h4>Grade 1</h4>
+                        <iframe src="https://www.youtube.com/embed/examplevideo1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video">
+                        <h4>Grade 2</h4>
+                        <iframe src="https://www.youtube.com/embed/examplevideo2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <!-- Add more video sections for other grades as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Vincordschools. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.querySelector('.side-menu');
+            const mainContent = document.querySelector('main');
+            sideMenu.classList.toggle('show');
+            mainContent.classList.toggle('expanded');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuLinks = document.querySelectorAll('.side-menu a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    toggleMenu();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

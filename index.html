@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vincordSchools</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="school-info">
+                <h1>VincordSchools</h1>
+                <p>Maseno new site off soliders quaters, ikoga -zebbe, Badagry, Lagos state</p>
+            </div>
+            <div class="social-handles">
+                <a href="https://facebook.com/school" target="_blank">
+                    <img src="facebook icon.png" alt="Facebook">
+               </a>
+                <a href="https://twitter icon.com/school" target="_blank">
+                    <img src="twitter icon.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com/school" target="_blank">
+                    <img src="instagram icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#management">Management</a></li>
+            <li><a href="#news-blogs">News & Blogs</a></li>
+            <li><a href="#school-activities">School Activities</a></li>
+            <li><a href="tour.html">School Tour</a></li>
+            <li><a href="application.html">Application</a></li>
+    </nav>
+    <main id="mainContent">
+        <section id="welcome">
+            <h2>Welcome to Our School</h2>
+            <img src="welcome.jpg" alt="Welcome Image" class="welcome-image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis nisi. Quisque cursus lectus at libero volutpat, nec efficitur urna tincidunt.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Secondary School, where excellence in education meets a nurturing environment for growth and learning. Our school is dedicated to providing a well-rounded education that prepares students for success in their academic and personal lives. With a team of highly qualified teachers, state-of-the-art facilities, and a commitment to fostering creativity and critical thinking, we offer a range of programs and activities to support each students development.</p>
+            <p>At Secondary School, we believe in creating a supportive community where students can thrive. Our curriculum is designed to challenge and inspire, while our extracurricular programs provide opportunities for students to explore their interests and talents. We invite you to learn more about our school through our website and consider joining our vibrant school community.</p>
+        </section>
+
+        <section id="management">
+            <h2>Management</h2>
+            <div class="owner-info">
+                <img src="founder.jpg" alt="Owner's Picture" class="owner-image">
+                <div class="owner-details">
+                    <h3>MRS NWAGU AMAKA</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis nisi. Quisque cursus lectus at libero volutpat, nec efficitur urna tincidunt. Vivamus ac risus vel orci pharetra aliquet. Donec vitae libero quis erat fringilla ultricies sit amet a orci. Sed quis orci auctor, gravida justo non, dapibus dui.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="news-blogs">
+            <h2>News & Blogs</h2>
+            <div class="news-blogs-content">
+                <article>
+                    <h3>School Opens New Science Wing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac risus vel orci pharetra aliquet.</p>
+                </article>
+                <article>
+                    <h3>Annual Sports Day Highlights</h3>
+                    <p>Nullam ac venenatis nisi. Quisque cursus lectus at libero volutpat, nec efficitur urna tincidunt.</p>
+                </article>
+                <article>
+                    <h3>Student Wins National Math Contest</h3>
+                    <p>Quisque cursus lectus at libero volutpat, nec efficitur urna tincidunt. Lorem ipsum dolor sit amet.</p>
+                </article>
+                <article>
+                    <h3>Tips for a Successful School Year</h3>
+                    <p>Lorem ipsumdolor sit amet, consectetur adipiscing elit. Nullam ac venenatis nisi. Vivamus ac risus vel orci pharetra aliquet.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="school-activities" class="colored-section">
+            <h2>School Activities</h2>
+            <div class="activities-content">
+                <article>
+                    <h3>Drama Club Performance</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac risus vel orci pharetra aliquet.</p>
+                </article>
+                <article>
+                    <h3>Art Exhibition</h3>
+                    <p>Nullam ac venenatis nisi. Quisque cursus lectus at libero volutpat, nec efficitur urna tincidunt.</p>
+                </article>
+                <article>
+                    <h3>Science Fair</h3>
+                    <p>Quisque cursus lectus at libero volutpat, nec efficitur urna tincidunt. Lorem ipsum dolor sit amet.</p>
+                </article>
+                <article>
+                    <h3>Sports Tournament</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis nisi. Vivamus ac risus vel orci pharetra aliquet.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="apply">
+            <h2>Apply to Our School</h2>
+            <a href="application.html" class="apply-button">Apply Now</a>
+        </section>
+
+        <section id="tour-info">
+            <h2>Discover Our School</h2>
+            <p>We are excited to offer you a glimpse into our vibrant and dynamic school environment. Our school tour provides an opportunity to explore our facilities, meet our dedicated staff, and see firsthand the engaging learning experiences we offer. Join us for a tour to learn more about what makes Secondary School a special place for students to grow and succeed.</p>
+            <a href="tour.html" class="tour-button">Take the Tour</a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Secondary School. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            const mainContent = document.getElementById('mainContent');
+            sideMenu.classList.toggle('show');
+            mainContent.classList.toggle('slide');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuLinks = document.querySelectorAll('.side-menu a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    toggleMenu();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
