@@ -7,7 +7,7 @@ A comprehensive platform for managing school operations efficiently.
 - **Class Scheduling**: Automate and customize class schedules for different grades and sections.
 - **Attendance Tracking**: Track and manage student and teacher attendance.
 - **Gradebook**: Record and analyze student grades and performance.
-- **Parent Communication Portal**: Facilitate communication between parents and the school.
+  
 
 ## Installation
 To get a local copy up and running, follow these simple steps:
